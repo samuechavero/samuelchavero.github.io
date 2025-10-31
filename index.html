@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Samuel Chavero</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Fondo de video para toda la web -->
+<video autoplay muted loop playsinline id="video-background">
+    <source src="img/banner.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+</video>
+
+<!-- Capa oscura opcional para contraste -->
+<div id="video-overlay"></div>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0"></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Inicio</a>
+                <a href="#about" class="nav-item nav-link">Sobre mi</a>
+                <a href="#skill" class="nav-item nav-link">Habilidades</a>
+             
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Samuel C.</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                 <a href="#service" class="nav-item nav-link">Servicios</a>
+                <a href="#project" class="nav-item nav-link">Trabajos</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0"><br><br><br>
+                    <h3 class="text-primary mb-3"></h3>
+                    <h1 class="display-3 mb-3">Samuel Chavero</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Desarrollador Web, Diseñador Web, Consultor Digital</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="#project" class="btn btn-primary py-3 px-4 me-5">Proyectos</a>
+                        <!-- Botón -->
+<button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="img/wesen.mp4">
+    <span></span>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <video id="modalVideo" class="w-100" controls>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+                        <h5 class="ms-4 mb-0 d-none d-sm-block"></h5>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="img/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel"></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">7</h1>
+                            <h5 class="mb-0">Años</h5>
+                        </div>
+                        <h3 class="lh-base mb-0">de experiencia creando sitios web modernos y funcionales </h3>
+                    </div>
+                 
+    <p class="mb-4">
+        Soy Samuel Chavero, <strong>desarrollador web</strong> y <strong>consultor de procesos de negocio</strong>. 
+        Brindo <strong>herramientas digitales</strong> que ayudan a empresas a gestionar sus ventas y operaciones de manera más eficiente, moderna y profesional.
+    </p>
+
+ <ul class="list-unstyled mb-3">
+    <li class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Optimización de procesos digitales para aumentar la eficiencia de tu empresa</li>
+    <li class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Desarrollo de sitios web y plataformas que generan resultados medibles</li>
+    <li class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Soluciones personalizadas alineadas con los objetivos estratégicos de tu negocio</li>
+</ul>
+
+
+  
+</div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+    <video class="img-fluid rounded" autoplay muted loop>
+        <source src="img/about-1.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+</div>
+
+                        <div class="col-sm-6">
+                            <video class="img-fluid rounded" autoplay muted loop>
+        <source src="img/about-2.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+                        </div>
+                    </div>
+               <div class="d-flex align-items-center mb-3">
+  <h5 class="border-end pe-3 me-3 mb-0">Empresas que crecen</h5>
+ 
+</div>
+<p class="mb-4">
+  Mis clientes logran aumentar su alcance digital, mejorar la conversión y automatizar tareas que antes consumían tiempo y recursos.
+</p>
+
+<div class="d-flex align-items-center mb-3">
+  <h5 class="border-end pe-3 me-3 mb-0">Procesos más eficientes</h5>
+  
+</div>
+<p class="mb-0">
+  Implemento herramientas que simplifican la gestión, reducen errores y permiten tomar decisiones con datos reales.
+</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+<!-- Expertise Start -->
+<div class="container-xxl py-6 pb-5" id="skill">
+  <div class="container">
+    <div class="row g-5">
+      <br><br>
+      <!-- Columna izquierda: Habilidades -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">  <br><br>
+        <h1 class="display-5 mb-5">Habilidades y Enfoque</h1>
+        <p class="mb-4">
+          Ayudo a empresas y emprendedores a mejorar sus ventas, su presencia digital y la forma en que gestionan a sus clientes. 
+          Combino el desarrollo web con la automatización de procesos comerciales, para que cada negocio crezca de forma más simple, ordenada y rentable.
+        </p>
+
+        <h3 class="mb-4">Mis Especialidades</h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Desarrollo web profesional</h6>
+                <h6 class="font-weight-bold">95%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"></div>
+              </div>
+            </div>
+
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Diseño orientado a conversiones</h6>
+                <h6 class="font-weight-bold">90%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90"></div>
+              </div>
+            </div>
+
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Gestión digital de clientes</h6>
+                <h6 class="font-weight-bold">92%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="92"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Plan de optimización de ventas</h6>
+                <h6 class="font-weight-bold">88%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="88"></div>
+              </div>
+            </div>
+
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Optimización de procesos internos</h6>
+                <h6 class="font-weight-bold">85%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Enfoque y Cómo trabajo -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s"><br><br>
+        <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+          <li class="nav-item w-50">
+            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Mi Enfoque</button>
+          </li>
+          <li class="nav-item w-50">
+            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Cómo Trabajo</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="tab-1" class="tab-pane fade show active p-0">
+            <div class="row gy-5 gx-4">
+              <div class="col-sm-12">
+                <h5>Consultoría digital integral</h5>
+                <hr class="text-primary my-2">
+                <p class="mb-0">
+                  Analizo cómo una empresa gestiona sus ventas, clientes y tareas internas, y diseño sistemas digitales que le permiten ahorrar tiempo, mejorar la comunicación y aumentar la rentabilidad.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <h5>Enfoque en resultados</h5>
+                <hr class="text-primary my-2">
+                <p class="mb-0">
+                  Cada herramienta que desarrollo o implemento tiene un propósito claro: que el negocio venda más, trabaje mejor y crezca con datos reales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-2" class="tab-pane fade p-0">
+            <div class="row gy-5 gx-4">
+              <div class="col-sm-12">
+                <h5>Proceso de trabajo</h5>
+                <hr class="text-primary my-2">
+                <p class="mb-0">
+                  1. Diagnóstico del negocio<br>
+                  2. Diseño de la estrategia digital<br>
+                  3. Desarrollo web y sistemas personalizados<br>
+                  4. Implementación y capacitación<br>
+                  5. Seguimiento y optimización continua
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin columna derecha -->
+
+    </div>
+  </div>
+</div>
+<!-- Expertise End -->
+
+
+
+<!-- Service Start --> 
+<div class="container-fluid bg-light my-5 py-6" id="service">
+    <div class="container">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <h1 class="display-5 mb-0">Servicios</h1>
+            </div>
+            
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Servicio 1: Diseño y desarrollo web -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Diseño y Desarrollo Web</h4>
+                        <span>Creo sitios web modernos, rápidos y estratégicos que reflejan la identidad de tu marca y generan resultados reales. Cada proyecto está orientado a mejorar la presencia digital y aumentar las conversiones.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 2: Plan de acción de crecimiento -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-chart-line fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Plan de Acción de Crecimiento</h4>
+                        <span>Analizo tu negocio y diseño un plan estratégico con pasos concretos para aumentar las ventas, mejorar la comunicación digital y optimizar los recursos. Ideal para empresas que quieren crecer con un enfoque claro y medible.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 3: Servicio digital de gestión de ventas -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-handshake fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Servicio Digital de Gestión de Ventas</h4>
+                        <span>Implemento sistemas que te permiten organizar y automatizar todo tu proceso comercial. Desde la captación de contactos hasta el cierre de ventas, podrás hacer seguimiento de cada oportunidad, medir resultados y fortalecer la relación con tus clientes.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 4: Servicio digital de optimización de procesos internos -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-cogs fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Servicio Digital de Optimización de Procesos Internos</h4>
+                        <span>Ayudo a las empresas a digitalizar y mejorar sus operaciones internas. Con una plataforma centralizada podés gestionar inventarios, pedidos, facturación y reportes en tiempo real, integrando todas las áreas de tu negocio para lograr más eficiencia y rentabilidad.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+
+   <!-- Projects Start -->
+<div class="container-xxl py-6 pt-5" id="project">
+  <div class="container">
+    <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-12 text-center">
+        <h1 class="display-5 mb-3">Trabajos destacados</h1>
+        <p class="text-muted">
+          Algunos de los sitios web que diseñé y desarrollé para potenciar la presencia digital de mis clientes.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+      <!-- Proyecto 1 -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-img rounded overflow-hidden">
+          <video class="img-fluid" autoplay muted loop playsinline>
+  <source src="img/wesen.mp4" type="video/mp4">
+  Tu navegador no soporta videos HTML5.
+</video>
+
+<div class="portfolio-btn">
+  <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/wesen.mp4" data-lightbox="portfolio">
+    <i class="fa fa-eye"></i>
+  </a>
+     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://samuechavero.github.io/wesen.github.io/" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+        <h5 class="mt-3">Landing Page Corporativa</h5>
+        <p class="text-muted">Diseño y desarrollo enfocado en conversión y presencia de marca.</p>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-img rounded overflow-hidden">
+         <video class="img-fluid" autoplay muted loop playsinline>
+  <source src="img/eduka.mp4" type="video/mp4">
+  Tu navegador no soporta videos HTML5.
+</video>
+
+<div class="portfolio-btn">
+  <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/eduka.mp4" data-lightbox="portfolio">
+    <i class="fa fa-eye"></i>
+  </a>
+     <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.somoseduka.com/" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+        <h5 class="mt-3">Web Institucional</h5>
+        <p class="text-muted">Diseño profesional enfocado en comunicación y confianza.</p>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="portfolio-img rounded overflow-hidden">
+          <video class="img-fluid" autoplay muted loop playsinline>
+  <source src="img/colchones.mp4" type="video/mp4">
+  Tu navegador no soporta videos HTML5.
+</video>
+
+<div class="portfolio-btn">
+  <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/colchones.mp4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.colchonesyhogar.com/" target="_blank"><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+       <h5 class="mt-3">E-Commerce Personalizado</h5>
+        <p class="text-muted">Desarrollo de tienda online con pasarela de pago y gestión de productos.</p>
+      </div>
+
+   
+    </div>
+  </div>
+</div>
+<!-- Projects End -->
+
+
+   
+   <!-- Contact Start -->
+<div class="container-xxl pb-5" id="contact">
+  <div class="container py-5">
+    <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-6">
+        <h1 class="display-5 mb-0">¿Listo para impulsar tu negocio?</h1>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <!-- Información -->
+      <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <p class="mb-2">Ubicación:</p>
+        <h3 class="fw-bold">Córdoba, Argentina</h3>
+        <hr class="w-100">
+        <p class="mb-2">WhatsApp:</p>
+        <h3 class="fw-bold">
+          <a href="https://wa.me/5493518617427" target="_blank" class="text-dark text-decoration-none">+54 9 351 861 7427</a>
+        </h3>
+        <hr class="w-100">
+        <p class="mb-2">Sígueme:</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/samuelchavero" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/samuchavero" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Formulario WhatsApp -->
+      <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <p class="mb-4">
+          Seleccioná los servicios que te interesen, dejame tu nombre y mensaje, y enviame todo directamente por WhatsApp 👇
+        </p>
+
+        <form id="whatsappForm">
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                <label for="name">Tu nombre</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <p class="fw-bold mb-2">Estoy interesado en:</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Diseño y desarrollo web" id="servicio1">
+                <label class="form-check-label" for="servicio1">Diseño y desarrollo web</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Optimización de procesos internos" id="servicio2">
+                <label class="form-check-label" for="servicio2">Optimización de procesos internos</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Gestión digital de ventas" id="servicio3">
+                <label class="form-check-label" for="servicio3">Gestión digital de ventas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Plan de acción para crecimiento" id="servicio4">
+                <label class="form-check-label" for="servicio4">Plan de acción para crecimiento</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Escribí tu mensaje" id="message" style="height: 100px" required></textarea>
+                <label for="message">Mensaje</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn-primary py-3 px-5" type="submit">Enviar por WhatsApp</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script del formulario -->
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const phoneNumber = "5493518617427";
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+
+    // Capturar los servicios seleccionados
+    const selectedServices = [];
+    document.querySelectorAll("input[type=checkbox]:checked").forEach((el) => {
+      selectedServices.push(el.value);
+    });
+
+    // Crear el texto del mensaje
+    const text = `Hola Samuel 👋, te contacto desde tu sitio web.%0A
+*Nombre:* ${name}%0A
+*Servicios de interés:* ${selectedServices.length > 0 ? selectedServices.join(", ") : "No seleccionó ninguno"}%0A
+*Mensaje:* ${message}`;
+
+    // Enviar a WhatsApp
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
+  });
+</script>
+<!-- Contact End -->
+
+    <!-- Contact End -->
+
+<!-- Map Start -->
+<div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container-xxl pt-5 px-0">
+    <div class="bg-dark">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6822.911181379485!2d-64.18877666924518!3d-31.420083818231844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902d6f5f5e9%3A0x4a8b73a8a5dc61ce!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1729700000000!5m2!1ses!2sar"
+        frameborder="0"
+        style="width: 100%; height: 450px; border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0">
+      </iframe>
+    </div>
+  </div>
+</div>
+<!-- Map End -->
+
+<!-- Footer Start -->
+<footer class="container-fluid bg-dark text-white py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Izquierda -->
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="mb-0">
+          © <span id="year"></span> 
+          <a class="text-secondary fw-bold text-decoration-none" href="#">Samuel Chavero</a>. 
+          Todos los derechos reservados.
+        </p>
+      </div>
+
+      <!-- Derecha -->
+      <div class="col-md-6 text-center text-md-end">
+        <p class="mb-0">
+          Desarrollado por 
+          <a class="text-secondary fw-bold text-decoration-none" href="#home">Samuel Chavero</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Actualiza automáticamente el año
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<!-- Footer End -->
+
+
+
+   <!-- WhatsApp flotante -->
+<a href="https://wa.me/543518617427" target="_blank" class="btn btn-lg btn-warning btn-lg-square " style="background-color: #FFD700; border-color: #FFD700; position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+    <i class="bi bi-whatsapp" style="color: #fff; font-size: 1.5rem;"></i>
+</a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- jQuery (requerido para Counter-Up) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Waypoints (necesario para detectar el scroll) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+<!-- Counter-Up -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="counter-up"]').counterUp({
+      delay: 10,
+      time: 2000
+    });
+  });
+</script>
+<script>
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+
+</html>
